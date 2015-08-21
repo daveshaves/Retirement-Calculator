@@ -37,6 +37,7 @@ int main()
 		cout << "Enter amount of money saved per year: $"; //Estimated amount of money saved per year
 		double yearly_savings;
 		cin >> yearly_savings;
+		
 		double sav_rate = 0.06;	//Statically setting the rate of return on investments to 6% per year
 		double infl_rate = 0.03; //Statically setting the inflation rate to 3% per year
 		double eff_rate = ((1 + sav_rate) / (1 + infl_rate)) - 1; //Calculates the effective rate of return
