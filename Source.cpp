@@ -12,14 +12,14 @@ int main()
 	do{
 		cout << "Welcome to the retirement calculator!"
 			 << "\n\nNote that in this calculator we assume a few things:"
-			 << "\n\t-The annual rate of return on savings will be set to 7% per year" //These are conservative estimates
-			 << "\n\t and the annual inflation rate set to 3% per year"
-			 << "\n\t-Your current salary will be enough for you to live on"
-			 << "\n\t during retirement and will be adjusted for inflation"
-			 << "\n\t-Your yearly income and savings will go up every year by" 
-			 << "\n\t the inflation rate"
-			 << "\n\nEnter your current age: ";
-		
+			 << "\n\n-The annual rate of return on savings will be set to 7% per year" //These are conservative estimates
+			 << "\n and the annual inflation rate set to 3% per year"
+			 << "\n\n-Your current salary will be enough for you to live on"
+			 << "\n during retirement and will be adjusted for inflation"
+			 << "\n\n-Your yearly income and contributiona to retirement savings" 
+			 << "\n will go up every year by the inflation rate";
+			 
+		cout << "\n\nEnter your current age: ";
 		int age_curr;
 		cin >> age_curr;
 		cout << "Enter the age you would like to retire: "; //Desired retirement age
@@ -74,7 +74,8 @@ int main()
 				cout << "\n\tEven though you hit your retirement goal, you are saving $" << savings_shortfall
 					 << "\n\tless per year than is recommended."
 					 << "\n\tYour initial savings helped offset this slight savings shortfall"
-					 << "\n\tConsider saving some more just in case though"
+					 << "\n\tand will enable you to just barely squeak by"
+					 <<"\n\tConsider saving some more just in case though"
 					 << endl;
 		}
 		
